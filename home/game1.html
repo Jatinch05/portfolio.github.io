@@ -1,0 +1,451 @@
+<html>
+    <head>
+        <title>WORD GUESS</title>
+        <script>
+            
+            let i,j,l,k,a,b,c,d,e,f,g,h,m,n,o,p,z;
+            let score=0
+            let lives=5
+            var count1=0
+            var count2=0
+            var count3=0
+            var count4=0
+            var count5=0
+            var count6=0
+        
+            function game1()
+            {
+                i=prompt("Enter the alphabet")
+               
+                
+                    document.getElementById("1").innerHTML=i.toUpperCase()
+                    
+                
+            }
+            function game2()
+            {
+                j=prompt("Enter the alphabet")
+                
+                
+                    document.getElementById("2").innerHTML=j.toUpperCase()
+            }
+            function game3()
+            {
+                l=prompt("Enter the alphabet")
+                
+                
+                    document.getElementById("3").innerHTML=l.toUpperCase()
+                
+            }
+            function check()
+            {       
+                
+                
+                if(count1<1)
+                {if((i=='e' ?? i=='E') && (j=='a' ?? j=='A') && (l=='r' ?? l=='R'))
+                {   score++
+                    alert("Correct :)")
+                    alert("Your score is " +score)
+                    count1++
+                }
+                else{
+                    lives--
+                    if(lives>0)
+                    {alert("Try Again")}
+                    document.getElementById("life").innerHTML=lives
+                }
+                if(lives==0)
+                {
+                    alert("Game Over!")
+                    window.location.reload();
+                }
+                if(lives==1)
+                {alert("Be careful! You only have 1 life left")}
+                if(score==6)
+                {
+                    alert("Congratulations! You won")
+                    window.location.reload();
+                }}
+                else
+                {
+                    alert("Try another word")
+                }
+               
+
+            
+
+            }
+            function game4()
+            {
+                k=prompt("Enter the alphabet")
+               
+                
+                    document.getElementById("4").innerHTML=k.toUpperCase()
+                    
+                
+            }
+            function game5()
+            {
+                a=prompt("Enter the alphabet")
+                
+                
+                    document.getElementById("5").innerHTML=a.toUpperCase()
+            }
+            function game6()
+            {
+                b=prompt("Enter the alphabet")
+                
+                
+                    document.getElementById("6").innerHTML=b.toUpperCase()
+                
+            }
+            function game7()
+            {
+                c=prompt("Enter the alphabet")
+                
+                
+                    document.getElementById("7").innerHTML=c.toUpperCase()
+            }
+            function game8()
+            {
+                d=prompt("Enter the alphabet")
+                
+                
+                    document.getElementById("8").innerHTML=d.toUpperCase()
+            }
+         function game9()
+            {
+                e=prompt("Enter the alphabet")
+                
+                
+                    document.getElementById("9").innerHTML=e.toUpperCase()
+            }
+                function check2()
+            {   
+                if(count2<1)
+                
+                {if((k=='a' ?? k=='A') && (a=='i' ?? a=='I') && (b=='n' ?? b=='N') && (c=='d' ?? c=='D') && (d=='r' ?? d=='R') && (e=='m' ?? e=='M'))
+                {   score++
+                    alert("Correct :)")
+                    alert("Your score is " +score)
+                    count2++
+                }
+                else{
+                    lives--
+                    if(lives>0)
+                    {alert("Try Again")}
+                    document.getElementById("life").innerHTML=lives
+                }
+                if(lives==0)
+                {
+                    alert("Game Over!")
+                    window.location.reload();
+                }
+                if(score==6)
+                {
+                    alert("Congratulations! You won")
+                    window.location.reload();
+                }
+                if(lives==1)
+                {alert("Be careful! You only have 1 life left")}}
+                else
+                {
+                    alert("Try another word")
+                }
+            }
+            function game10()
+            {
+                f=prompt("Enter the alphabet")
+               
+                
+                    document.getElementById("10").innerHTML=f.toUpperCase()
+                    
+                
+            }
+            function game11()
+            {
+                g=prompt("Enter the alphabet")
+                
+                
+                    document.getElementById("11").innerHTML=g.toUpperCase()
+            }
+            function check3()
+            {   
+                if(count3<1)
+                
+                {if((g=='e' ?? g=='E') && (f=='i' ?? f=='I'))
+                {   score++
+                    alert("Correct :)")
+                    alert("Your score is " +score)
+                    count3++
+                }
+                else{
+                    lives--
+                    if(lives>0)
+                    {alert("Try Again")}
+                    document.getElementById("life").innerHTML=lives
+                }
+                if(lives==0)
+                {
+                    alert("Game Over!")
+                    window.location.reload();
+                }
+                if(score==6)
+                {
+                    alert("Congratulations! You won")
+                    window.location.reload();
+                }
+                if(lives==1)
+                {alert("Be careful! You only have 1 life left")}}
+                else
+                {
+                    alert("Try another word")
+                }
+            }
+            function game12()
+            {
+                h=prompt("Enter the alphabet")
+               
+                
+                    document.getElementById("12").innerHTML=h.toUpperCase()
+                    
+                
+            }
+            function game13()
+            {
+                m=prompt("Enter the alphabet")
+                
+                
+                    document.getElementById("13").innerHTML=m.toUpperCase()
+            }
+            function check4()
+            {   
+                
+                if(count4<1)
+                {if((h=='a' ?? h=='A') && (m=='g' ?? m=='G'))
+                {   score++
+                    alert("Correct :)")
+                    alert("Your score is " +score)
+                    count4++
+                }
+                else{
+                    lives--
+                    if(lives>0)
+                    {alert("Try Again")}
+                    document.getElementById("life").innerHTML=lives
+                }
+                if(lives==0)
+                {
+                    alert("Game Over!")
+                    window.location.reload();
+                }
+                if(score==6)
+                {
+                    alert("Congratulations! You won")
+                    window.location.reload();
+                }
+                if(lives==1)
+                {alert("Be careful! You only have 1 life left")}}
+                else{
+                    alert("Try another word")
+                }
+            }
+            function game14()
+            {
+                n=prompt("Enter the alphabet")
+               
+                
+                    document.getElementById("14").innerHTML=n.toUpperCase()
+                    
+                
+            }
+            function game15()
+            {
+                o=prompt("Enter the alphabet")
+                
+                
+                    document.getElementById("15").innerHTML=o.toUpperCase()
+            }
+            function check5()
+            {   
+                
+                if(count5<1)
+                {if((n=='a' ?? n=='A') && (o=='t' ?? o=='T'))
+                {   score++
+                    alert("Correct :)")
+                    alert("Your score is " +score)
+                    count5++
+                }
+                else{
+                    lives--
+                    if(lives>0)
+                    {alert("Try Again")}
+                    document.getElementById("life").innerHTML=lives
+                }
+                if(lives==0)
+                {
+                    alert("Game Over!")
+                    window.location.reload();
+                }
+                if(score==6)
+                {
+                    alert("Congratulations! You won")
+                    window.location.reload();
+                }
+                if(lives==1)
+                {alert("Be careful! You only have 1 life left")}}
+                else
+                {
+                    alert("Try another word")
+                }
+            }
+            function game16()
+            {
+                p=prompt("Enter the alphabet")
+               
+                
+                    document.getElementById("16").innerHTML=p.toUpperCase()
+                    
+                
+            }
+            function game17()
+            {
+                z=prompt("Enter the alphabet")
+                
+                
+                    document.getElementById("17").innerHTML=z.toUpperCase()
+            }
+            function check6()
+            {   
+                
+                if(count6<1)
+                {if((p=='a' ?? p=='A') && (z=='v' ?? z=='V'))
+                {   score++
+                    alert("Correct :)")
+                    alert("Your score is " +score)
+                    count6++
+                }
+                else{
+                    lives--
+                    if(lives>0)
+                    {alert("Try Again")}
+                    document.getElementById("life").innerHTML=lives
+                }
+                if(lives==0)
+                {
+                    alert("Game Over!")
+                    window.location.reload();
+                }
+                if(score==6)
+                {
+                    alert("Congratulations! You won")
+                    window.location.reload();
+                }
+                if(lives==1)
+                {alert("Be careful! You only have 1 life left")}}
+                else
+                {
+                    alert("Try another word")
+                }
+            }
+            function hint1()
+            {
+                alert("1. Main part of Human Body")
+            }
+            function hint2()
+            {
+                alert("2. Reverse is same as the given number")
+            }
+            function hint3()
+            {
+                alert("3.The place where you store all documents")
+            }
+            function hint4()
+            {
+                alert("4.You carry this with you if you are going on a trip")
+            }
+            function hint5()
+            {
+                alert("5.A pet animal")
+            }
+            function hint6()
+            {
+                alert("6.A programming language")
+            }
+        </script>
+        <style>
+            .button
+            {
+                background-color: red;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 12px;
+                border-radius:8px;
+                
+            }
+            .para
+            {
+                color: blue;
+                text-align:center ;
+                font-size: x-large;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            
+        </style>
+
+        
+
+    </head>
+    <body background="https://wallpaperset.com/w/full/e/2/b/492399.jpg">
+        <center><h1>Guess the Word!</h1></center>
+        
+        <p class="para">The number of lives you have is <label id="life">5</label></p>
+        <label class="words" style="color:black;font-size: larger; ">
+        H <label id="1" onclick="game1()"> _ </label><label id="2" onclick="game2()"> _ </label><label id="3" onclick="game3()"> _ </label>T
+        <br>
+        <br>
+        <button class="button" onclick="check()">CHECK</button>&nbsp;&nbsp;<button class="button" align="left" onclick="hint1()">HINT</button>
+        <br>
+        <br>
+        P<label id="4" onclick="game4()">_ </label>L<label id="5" onclick="game5()">_ </label><label id="6" onclick="game6()">_ </label><label id="7" onclick="game7()">_ </label><label id="8" onclick="game8()">_ </label>O<label id="9" onclick="game9()">_ </label>E
+        <br>
+        <button class="button" onclick="check2()">CHECK</button>&nbsp;&nbsp;<button class="button" align="left" onclick="hint2()">HINT</button>
+        <br>
+        <br>
+        F <label id="10" onclick="game10()"> _ </label>L<label id="11" onclick="game11()"> _ </label>
+        <br>
+        <button class="button" onclick="check3()">CHECK</button>&nbsp;&nbsp;<button class="button" align="left" onclick="hint3()">HINT</button>
+        <br>
+        <br>
+        B<label id="12" onclick="game12()"> _ </label><label id="13" onclick="game13()"> _ </label>
+        <br>
+        <button class="button" onclick="check4()">CHECK</button>&nbsp;&nbsp;<button class="button" align="left" onclick="hint4()">HINT</button>
+        <br>
+        <br>
+        C<label id="14" onclick="game14()"> _ </label><label id="15" onclick="game15()"> _ </label>
+        <br>
+        <button class="button" onclick="check5()">CHECK</button>&nbsp;&nbsp;<button class="button" align="left" onclick="hint5()">HINT</button>
+        <br>
+        <br>
+        J<label id="16" onclick="game16()"> _ </label><label id="17" onclick="game17()"> _ </label>A<br>
+        <button class="button" onclick="check6()">CHECK</button>&nbsp;&nbsp;<button class="button" align="left" onclick="hint6()">HINT</button>
+        
+
+        </label>
+        <br>
+        <br>
+        
+
+
+
+        
+        <center><button class="button" onclick="window.location.reload()">Play Again</button></center>
+        
+        <br>
+        
+    </body>
+</html>

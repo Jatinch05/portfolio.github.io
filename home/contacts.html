@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <style>
+       .bg {
+            opacity: 0.3;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 700px;
+        }
+        .img1,.img2,.img3
+        {
+            position: relative;
+            opacity: 0.5;
+            
+        }
+        .img3:hover
+        {
+            opacity: 1;
+        }
+        .img2:hover
+        {
+            opacity: 1;
+        }
+        .img1:hover
+        {
+            opacity: 1;
+        }
+        .con
+        {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            font-size: 40px;
+            position:relative;
+        }
+
+        .links
+        {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            font-size: 45px;
+            position:relative;
+        }
+        a:link{
+            
+            color:yellow;
+        }
+        a:visited{
+            color: orange;
+        }
+               
+        </style>
+        <script>
+            function fun1()
+            {
+               
+                document.getElementById("1").innerHTML="MY EMAIL ID"
+                document.getElementById("2").innerHTML="jatinch2005@gmail.com"
+                document.getElementById("3").innerHTML=""
+                
+
+            }
+            function fun2()
+            {
+                document.getElementById("1").innerHTML="Click on the following link"
+                document.getElementById("2").innerHTML=""
+                document.getElementById("3").innerHTML="MY LINKEDIN ID"
+                document.getElementById("3").href="https://www.linkedin.com/in/jatin-ch-550b6a235/"    
+            }
+            function fun3()
+            {
+                document.getElementById("1").innerHTML="Click on the following link"
+                document.getElementById("2").innerHTML=""
+                document.getElementById("3").innerHTML="MY INSTAGRAM ID"
+                document.getElementById("3").href="https://www.instagram.com/ig_jatin.ch/"    
+            }
+
+        </script>
+    </head>
+    <body bgcolor="black">
+        <img src="bg2.png" class="bg"></img>
+        <span class="con">Reach out to me through the following platforms. Click on the logos</span><br><br><br>
+        <span>
+            <img onclick="fun1()" class="img1" height="150" width="150" src="mail.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img class="img2" onclick="fun2()" height="150" width="150" src="linkedin.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img onclick="fun3()" class="img3" height="150" width="150" src="insta.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br><br><br><br>
+
+
+        </span>
+        <span class="links">
+            <span id="1"></span><br>
+            <span id="2"></span><br>
+            <a id="3" href="" target="_blank"></a>
+        </span>
+
+    </body>
+</html>
